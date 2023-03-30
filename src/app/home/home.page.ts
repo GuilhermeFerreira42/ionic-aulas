@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IonReorderGroup, NavController, PopoverController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +17,17 @@ export class HomePage {
     { imagem: ['coisa.jpg'] , titulo : 'coisa 4', valor: 'texto', botao: 'Detalhes' },
     { imagem: ['coisa.jpg'] , titulo : 'coisa 5', valor: 'texto', botao: 'Detalhes' },
   ]
+  navCtrl: any;
   
   constructor() {}
 
+  public Ifood : any = [];
+
+  public goifood(ifood: any){
+    this.navCtrl.vnavigateForWard('pagina',{queryParams: {ifood: ifood}});
+
+
+  }
+
+  
 }

@@ -11,18 +11,18 @@ export class PaginaPage implements OnInit {
   public pathImgs = '../../assets/img/';
 
   
-  public ifood =  {
+  public botoes =  {
     titulo: '',
-    descrição: '',
+    botão: '',
     imagens: []
 }
 
 
-  // constructor(private route: ActivatedRoute) {
-  //   this.route.queryParams.subscribe(
-  //     params => {this.ifood = params['ifood'];}
-  //   );
-  //  }
+  constructor(private route: ActivatedRoute) {
+    this.route.queryParams.subscribe(
+      params => {this.botoes = params['botoes'];}
+    );
+   }
 
   ngOnInit() {
   }
