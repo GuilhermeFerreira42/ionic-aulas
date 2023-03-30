@@ -18,11 +18,11 @@ export class PaginaPage implements OnInit {
 }
 
 
-  constructor(private route: ActivatedRoute) {
-    this.route.queryParams.subscribe(
-      params => {this.ifood = params['ifood'];}
-    );
-   }
+  // constructor(private route: ActivatedRoute) {
+  //   this.route.queryParams.subscribe(
+  //     params => {this.ifood = params['ifood'];}
+  //   );
+  //  }
 
   ngOnInit() {
   }

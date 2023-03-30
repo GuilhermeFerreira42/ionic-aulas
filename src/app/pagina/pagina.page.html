@@ -3,24 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>{{botão.}}</ion-title>
+    <ion-title>titulo</ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content>
-  <ion-row class="ion-justify-content-center ion-text-center">
-    <ion-col size="3" >
-      <ion-slides pager="true">
-        <ion-slide *ngFor="let imagem of filme.imagens; let ix = index">
-          <ion-img [src]="pathImgs + imagem"></ion-img>
-        </ion-slide>
-      </ion-slides>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col>
-      {{filme.titulo + ',' + filme.sinopse}}
-    </ion-col>
-  </ion-row>
-</ion-content>
 
