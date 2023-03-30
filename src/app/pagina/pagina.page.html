@@ -11,7 +11,7 @@
   <ion-row class="ion-justify-content-center ion-text-center">
     <ion-col size="3" >
       <ion-slides pager="true">
-        <ion-slide *ngFor="let imagem of filme.imagens; let ix = index">
+        <ion-slide *ngFor="let imagem of botoes.imagens; let ix = index">
           <ion-img [src]="pathImgs + imagem"></ion-img>
         </ion-slide>
       </ion-slides>
@@ -19,10 +19,9 @@
   </ion-row>
   <ion-row>
     <ion-col>
-      {{botoes.titulo + ',' + botoes.botão}}
+      {{botoes.titulo}}
     </ion-col>
   </ion-row>
 </ion-content>
 
 
-{ imagem: ['coisa.jpg'] , titulo : 'coisa 1', valor: 'texto', botao: 'Detalhes'
