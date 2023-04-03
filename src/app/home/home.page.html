@@ -6,7 +6,6 @@
     <br/>
     <ion-title class="ion-text-center">ifood</ion-title>
 
-
     <ion-row class="cabecalho">
       <ion-segment>
         <ion-segment-button value="0">
@@ -18,7 +17,6 @@
       </ion-segment>
     </ion-row>
   </ion-toolbar>
-
 </ion-header>
 
 <ion-menu contentId="main" type="overlay">
@@ -39,17 +37,16 @@
   <ion-router-outlet id="main"></ion-router-outlet>
   <!-- botoes -->
   <ion-row class="ion-justify-content-center">
-    <ion-col size="4" *ngFor="let botao of botoes; let ix = index">
+    <ion-col size="6" *ngFor="let botao of botoes; let ix = index" (click)="goProduto(botao)">
       <ion-row class="ion-align-items-center ion-justify-content-center">
         <ion-col size="12" class="card">
-          <img [src]="pathImgs + botao.imagem" alt="Imagem do botão" width="100%">
+          <img [src]="pathImgs + botao.imagens" alt="Imagem do botão" width="100%">
           <ion-col size="12">
             <br>
             {{ botao.titulo }} <br>
-            {{botao.valor}}
+            {{ botao.valor }}
             <br>
             <button class="botao">{{ botao.botao }}</button>
-            <!-- <button class="botao" routerLink="/pagina">{{ botao.botao }}</button> -->
           </ion-col>
         </ion-col>
       </ion-row>

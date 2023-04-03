@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonReorderGroup, NavController, PopoverController } from '@ionic/angular';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -11,23 +11,34 @@ export class HomePage {
   public pathImgs = '../../assets/img/';
 
   public botoes = [
-    { imagem: ['coisa.jpg'] , titulo : 'coisa 1', valor: 'texto', botao: 'Detalhes' },
-    { imagem: ['coisa.jpg'] , titulo : 'coisa 2', valor: 'texto', botao: 'Detalhes' },
-    { imagem: ['coisa.jpg'] , titulo : 'coisa 3', valor: 'texto', botao: 'Detalhes' },
-    { imagem: ['coisa.jpg'] , titulo : 'coisa 4', valor: 'texto', botao: 'Detalhes' },
-    { imagem: ['coisa.jpg'] , titulo : 'coisa 5', valor: 'texto', botao: 'Detalhes' },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 1', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 2', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 3', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 4', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 5', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 1', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 2', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 3', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 4', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 5', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 1', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 2', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 3', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 4', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 5', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 1', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 2', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 3', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 4', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    { imagens: ['coisa.jpg'] , titulo : 'coisa 5', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
   ]
-  navCtrl: any;
-  
-  constructor() {}
+ 
+ 
+  constructor(private navCtrl: NavController) {}
 
-  public Ifood : any = [];
-
-  public goifood(ifood: any){
-    this.navCtrl.vnavigateForWard('pagina',{queryParams: {ifood: ifood}});
-
-
+  public goProduto(produto: any) {
+    this.navCtrl.navigateForward('pagina', {
+      queryParams: { produto: produto }
+    });
   }
-
-  
 }
