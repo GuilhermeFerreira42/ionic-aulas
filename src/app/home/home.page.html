@@ -7,14 +7,25 @@
     <ion-title class="ion-text-center">ifood</ion-title>
 
     <ion-row class="cabecalho">
-      <ion-segment>
+
+      <!-- <ion-row class="ion-align-items-center header-subline">
+        <ion-slides pager="false" class="slide-line" [options]="slideOpts">
+          <ion-slide *ngFor="let categoria of categorias; let ix = index" [ngClass]="categoria.codigo == selected ? 'slide-actived' : 'slide-no-actived'" (click)="setSelected(categoria.codigo)">
+            {{ categoria.nome }}
+          </ion-slide>
+        </ion-slides>
+      </ion-row> -->
+
+      <ion-segment [(ngModel)]="segment">
         <ion-segment-button value="0">
-          <ion-label>dados pessoais</ion-label>
+          <ion-label>coisas</ion-label>
         </ion-segment-button>
         <ion-segment-button value="1">
-          <ion-label>Questionario</ion-label>
+          <ion-label>nike</ion-label>
         </ion-segment-button>
       </ion-segment>
+
+
     </ion-row>
   </ion-toolbar>
 </ion-header>
@@ -36,7 +47,9 @@
 <ion-content>
   <ion-router-outlet id="main"></ion-router-outlet>
   <!-- botoes -->
-  <ion-row class="ion-justify-content-center">
+
+ <ion-segment *ngIf="segment == '0'">
+  <ion-row class="ion-justify-content-center" >
     <ion-col size="6" *ngFor="let botao of botoes; let ix = index" (click)="goProduto(botao)">
       <ion-row class="ion-align-items-center ion-justify-content-center">
         <ion-col size="12" class="card">
@@ -52,6 +65,30 @@
       </ion-row>
     </ion-col>
   </ion-row>
+</ion-segment>
+
+<ion-segment *ngIf="segment == '1'">
+  <ion-row class="ion-justify-content-center"  >
+    <ion-col size="6" *ngFor="let nike of nikes; let ix = index" (click)="goProduto(nike)"  >
+      <ion-row class="ion-align-items-center ion-justify-content-center">
+        <ion-col size="12" class="card1">
+          <img [src]="pathImgs + nike.imagens" alt="Imagem do botão" width="100%">
+          <ion-col size="12">
+            <br>
+            {{ nike.titulo }} <br>
+            {{ nike.valor }}
+            <br>
+            <button class="botao">{{ nike.botao }}</button>
+          </ion-col>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-segment>
+
+
+
+
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed" class="btn-order">
     <ion-fab-button>
