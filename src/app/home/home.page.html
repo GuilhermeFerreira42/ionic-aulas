@@ -1,11 +1,19 @@
-<ion-header style="background-color: red">
+<ion-header>
   <ion-toolbar class="header">
+    <ion-row>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <br/>
+    <br>
     <ion-title class="ion-text-center">ngFashion</ion-title>
-
+    
+    <ion-buttons slot="end">
+      <ion-col size="2" class="ion-text-end account-icon" width="100%">
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </ion-col>
+    </ion-buttons>
+    </ion-row>
+    
     <ion-row class="cabecalho">
         <ion-segment [(ngModel)]="segment">
         <ion-segment-button value="0">
@@ -35,6 +43,8 @@
     </ion-list>
   </ion-content>
 </ion-menu>
+
+
 
 <ion-content>
   <ion-router-outlet id="main"></ion-router-outlet>
