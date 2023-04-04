@@ -1,6 +1,5 @@
-<ion-header>
+<ion-header style="background-color: red">
   <ion-toolbar class="header">
-    <ion-row>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -12,7 +11,6 @@
         <ion-icon name="person-circle-outline"></ion-icon>
       </ion-col>
     </ion-buttons>
-    </ion-row>
     
     <ion-row class="cabecalho">
         <ion-segment [(ngModel)]="segment">
@@ -58,9 +56,9 @@
           <img [src]="pathImgs + botao.imagens" alt="Imagem do botão" width="100%">
           <ion-col size="12">
             <br>
-            {{ botao.titulo }} <br>
+            {{ botao.titulo }} <br><br>
             {{ formataValor(botao.valor) }}
-            <br>
+            <br><br>
             <button class="botao">{{ botao.botao }}</button>
           </ion-col>
         </ion-col>
@@ -78,9 +76,9 @@
           <img [src]="pathImgs + nike.imagens" alt="Imagem do botão" width="100%">
           <ion-col size="12">
             <br>
-            {{ nike.titulo }} <br>
-            {{ nike.valor }}
-            <br>
+            {{ nike.titulo }} <br><br>
+            {{ formataValor(nike.valor) }}
+            <br><br>
             <button class="botao">{{ nike.botao }}</button>
           </ion-col>
         </ion-col>
@@ -98,8 +96,8 @@
           <img [src]="pathImgs + camiseta.imagens" alt="Imagem do botão" width="100%">
           <ion-col size="12">
             <br>
-            {{ camiseta.titulo }} <br>
-            {{ camiseta.valor }}
+            {{ camiseta.titulo }} <br><br>
+            {{ formataValor(camiseta.valor) }} <br>
             <br>
             <button class="botao">{{ camiseta.botao }}</button>
           </ion-col>
