@@ -35,11 +35,31 @@ export class HomePage {
  
 
   public nikes = [
-    {  codigo: 1, categoria: 3, imagens: ['coisa.jpg'] , titulo : 'coisa 1', valor: '400', botao: 'VER MAIS', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+    {  codigo: 1, categoria: 3, imagens: ['air force.jpeg'] , titulo : 'Air Force', valor: '400', botao: 'VER MAIS', descricao   : 'O Nike Air Force é um clássico da marca Nike e um dos modelos de tênis mais icônicos do mundo da moda e do esporte. O tênis apresenta uma parte superior em couro premium, com perfurações para maior respirabilidade. A entressola em espuma e a sola de borracha proporcionam excelente amortecimento e tração, tornando o Air Force ideal para uso esportivo e casual..', },
+    
+    {  codigo: 1, categoria: 3, imagens: ['airmax 97.jpeg'] , titulo : 'Air Max 97', valor: '400', botao: 'VER MAIS', descricao   : 'O Nike Air Max 97 é um clássico da marca Nike e um dos modelos mais populares da linha Air Max. O tênis apresenta uma parte superior em camurça e couro sintético, com linhas onduladas que se estendem por toda a extensão do tênis. A entressola é composta por uma unidade de amortecimento Air Max, que proporciona conforto e suporte a cada passada, enquanto a sola de borracha oferece tração e durabilidade.', },
+
+    {  codigo: 1, categoria: 3, imagens: ['blaze.jpeg'] , titulo : 'Blazer', valor: '400', botao: 'VER MAIS', descricao   : 'O Nike Blazer é um tênis icônico da marca Nike, que combina estilo e conforto em um design clássico e atemporal. O tênis apresenta uma parte superior em couro premium, com o icônico Swoosh da Nike nas laterais. A entressola em espuma e a sola de borracha oferecem excelente amortecimento e tração, tornando o Blazer ideal para uso esportivo e casual.', },
+
+    { codigo: 1, categoria: 3, imagens: ['dunk.jpeg'] , titulo : 'Dunk', valor: '400', botao: 'VER MAIS', descricao   : 'O Nike Dunk é um tênis clássico da marca Nike, que se tornou um ícone da cultura sneakerhead e da moda urbana. O tênis apresenta uma parte superior em couro ou camurça, com o icônico Swoosh da Nike nas laterais. A entressola em espuma e a sola de borracha oferecem excelente amortecimento e tração, tornando o Dunk ideal para uso esportivo e casual.' , },
 ]
 
 public camisetas = [
-  {  codigo: 1, categoria: 3, imagens: ['coisa.jpg'] , titulo : 'coisa 1', valor: '400', botao: 'VER MAIS', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+  {  codigo: 1, categoria: 3, imagens: ['t-shirt nike (1).jpg'] , titulo : 't-shirt nike', valor: '400', botao: 'VER MAIS', descricao   : 'As camisetas de algodão Nike são uma escolha clássica e confortável para aqueles que buscam estilo e qualidade. As camisetas apresentam uma construção em 100% algodão, proporcionando uma sensação macia e confortável ao toque. O design é simples e elegante, com o icônico Swoosh da Nike em destaque no peito.', },
+
+  {  codigo: 1, categoria: 3, imagens: ['t-shirt nike (2).jpg'] , titulo : 't-shirt nike', valor: '400', botao: 'VER MAIS', descricao   : 'As camisetas de algodão Nike são uma escolha clássica e confortável para aqueles que buscam estilo e qualidade. As camisetas apresentam uma construção em 100% algodão, proporcionando uma sensação macia e confortável ao toque. O design é simples e elegante, com o icônico Swoosh da Nike em destaque no peito.', },
+
+  {  codigo: 1, categoria: 3, imagens: ['t-shirt nike (3).jpg'] , titulo : 't-shirt nike', valor: '400', botao: 'VER MAIS', descricao   : 'As camisetas de algodão Nike são uma escolha clássica e confortável para aqueles que buscam estilo e qualidade. As camisetas apresentam uma construção em 100% algodão, proporcionando uma sensação macia e confortável ao toque. O design é simples e elegante, com o icônico Swoosh da Nike em destaque no peito.', },
+
+  {  codigo: 1, categoria: 3, imagens: ['t-shirt nike (4).jpg'] , titulo : 't-shirt nike', valor: '400', botao: 'VER MAIS', descricao   : 'As camisetas de algodão Nike são uma escolha clássica e confortável para aqueles que buscam estilo e qualidade. As camisetas apresentam uma construção em 100% algodão, proporcionando uma sensação macia e confortável ao toque. O design é simples e elegante, com o icônico Swoosh da Nike em destaque no peito.', },
+
+  {  codigo: 1, categoria: 3, imagens: ['t-shirt adidas (1).jpg'] , titulo : 't-shirt adidas', valor: '400', botao: 'VER MAIS', descricao   : 'As camisetas de algodão Adidas são uma escolha clássica e confortável para aqueles que buscam estilo e qualidade. As camisetas apresentam uma construção em 100% algodão, proporcionando uma sensação macia e confortável ao toque. O design é simples e elegante, com o icônico logotipo da Adidas em destaque no peito.', },
+
+  {  codigo: 1, categoria: 3, imagens: ['t-shirt adidas (2).jpg'] , titulo : 't-shirt adidas', valor: '400', botao: 'VER MAIS', descricao   : 'As camisetas de algodão Adidas são uma escolha clássica e confortável para aqueles que buscam estilo e qualidade. As camisetas apresentam uma construção em 100% algodão, proporcionando uma sensação macia e confortável ao toque. O design é simples e elegante, com o icônico logotipo da Adidas em destaque no peito.', },
+
+  {  codigo: 1, categoria: 3, imagens: ['t-shirt adidas (3).jpg'] , titulo : 't-shirt adidas', valor: '400', botao: 'VER MAIS', descricao   : 'As camisetas de algodão Adidas são uma escolha clássica e confortável para aqueles que buscam estilo e qualidade. As camisetas apresentam uma construção em 100% algodão, proporcionando uma sensação macia e confortável ao toque. O design é simples e elegante, com o icônico logotipo da Adidas em destaque no peito.', },
+
+  {  codigo: 1, categoria: 3, imagens: ['t-shirt adidas (4).jpg'] , titulo : 't-shirt adidas', valor: '400', botao: 'VER MAIS', descricao   : 'As camisetas de algodão Adidas são uma escolha clássica e confortável para aqueles que buscam estilo e qualidade. As camisetas apresentam uma construção em 100% algodão, proporcionando uma sensação macia e confortável ao toque. O design é simples e elegante, com o icônico logotipo da Adidas em destaque no peito.', },
 ]
  
   constructor(private navCtrl: NavController) {}
