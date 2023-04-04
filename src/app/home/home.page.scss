@@ -48,7 +48,7 @@ box-shadow: 0px 3px 11px 1px rgba(0,0,0,0.75);
  .header{
   background-color: #000000;
   text-align: center;
-  color: blue;
+  color: rgb(255, 255, 255);
 
 
 
@@ -67,4 +67,8 @@ box-shadow: 0px 3px 11px 1px rgba(0,0,0,0.75);
   border-radius: 5px; /* Borda arredondada */
   transition-duration: 0.4s; /* Tempo da transição */
   cursor: pointer; /* Cursor ao passar o mouse */
+}
+
+.bold-text {
+  font-weight: bold;
 }

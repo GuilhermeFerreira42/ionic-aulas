@@ -1,5 +1,5 @@
 <ion-header style="background-color: red">
-  <ion-toolbar class="header">
+  <ion-toolbar class="header" color="danger">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -13,18 +13,19 @@
     </ion-buttons>
     
     <ion-row class="cabecalho">
-        <ion-segment [(ngModel)]="segment">
+      <ion-segment [(ngModel)]="segment">
         <ion-segment-button value="0">
-          <ion-label>adidas</ion-label>
+          <ion-label class="bold-text">adidas</ion-label>
         </ion-segment-button>
         <ion-segment-button value="1">
-          <ion-label>nike</ion-label>
+          <ion-label class="bold-text">nike</ion-label>
         </ion-segment-button>
         <ion-segment-button value="2">
-          <ion-label>camisetas</ion-label>
+          <ion-label class="bold-text">camisetas</ion-label>
         </ion-segment-button>
       </ion-segment>
     </ion-row>
+    
   </ion-toolbar>
 </ion-header>
 
