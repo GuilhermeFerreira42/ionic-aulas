@@ -1,31 +1,23 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar class="header">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <br/>
-    <ion-title class="ion-text-center">ifood</ion-title>
+    <ion-title class="ion-text-center">ngFashion</ion-title>
 
     <ion-row class="cabecalho">
-
-      <!-- <ion-row class="ion-align-items-center header-subline">
-        <ion-slides pager="false" class="slide-line" [options]="slideOpts">
-          <ion-slide *ngFor="let categoria of categorias; let ix = index" [ngClass]="categoria.codigo == selected ? 'slide-actived' : 'slide-no-actived'" (click)="setSelected(categoria.codigo)">
-            {{ categoria.nome }}
-          </ion-slide>
-        </ion-slides>
-      </ion-row> -->
-
-      <ion-segment [(ngModel)]="segment">
+        <ion-segment [(ngModel)]="segment">
         <ion-segment-button value="0">
-          <ion-label>coisas</ion-label>
+          <ion-label>adidas</ion-label>
         </ion-segment-button>
         <ion-segment-button value="1">
           <ion-label>nike</ion-label>
         </ion-segment-button>
+        <ion-segment-button value="2">
+          <ion-label>camisetas</ion-label>
+        </ion-segment-button>
       </ion-segment>
-
-
     </ion-row>
   </ion-toolbar>
 </ion-header>
@@ -38,15 +30,15 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-item routerLink="/page1">Page 1</ion-item>
-      <ion-item routerLink="/page2">Page 2</ion-item>
+      <ion-item routerLink="/page1">Guilherme Ferreira</ion-item>
+      <ion-item routerLink="/page2">Nicolas Correia</ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
 
 <ion-content>
   <ion-router-outlet id="main"></ion-router-outlet>
-  <!-- botoes -->
+  <!-- adidas -->
 
  <ion-segment *ngIf="segment == '0'">
   <ion-row class="ion-justify-content-center" >
@@ -67,11 +59,12 @@
   </ion-row>
 </ion-segment>
 
+<!-- nike -->
 <ion-segment *ngIf="segment == '1'">
   <ion-row class="ion-justify-content-center"  >
     <ion-col size="6" *ngFor="let nike of nikes; let ix = index" (click)="goProduto(nike)"  >
       <ion-row class="ion-align-items-center ion-justify-content-center">
-        <ion-col size="12" class="card1">
+        <ion-col size="12" class="card">
           <img [src]="pathImgs + nike.imagens" alt="Imagem do botão" width="100%">
           <ion-col size="12">
             <br>
@@ -86,9 +79,25 @@
   </ion-row>
 </ion-segment>
 
-
-
-
+<!-- camiseta -->
+<ion-segment *ngIf="segment == '2'">
+  <ion-row class="ion-justify-content-center"  >
+    <ion-col size="6" *ngFor="let camiseta of camisetas; let ix = index" (click)="goProduto(camiseta)"  >
+      <ion-row class="ion-align-items-center ion-justify-content-center">
+        <ion-col size="12" class="card">
+          <img [src]="pathImgs + camiseta.imagens" alt="Imagem do botão" width="100%">
+          <ion-col size="12">
+            <br>
+            {{ camiseta.titulo }} <br>
+            {{ camiseta.valor }}
+            <br>
+            <button class="botao">{{ camiseta.botao }}</button>
+          </ion-col>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-segment>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed" class="btn-order">
     <ion-fab-button>

@@ -14,18 +14,16 @@ export class HomePage {
 
   public botoes = [
     {  codigo: 1, categoria: 3, imagens: ['coisa.jpg'] , titulo : 'coisa 1', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
-    { imagens: ['coisa.jpg'] , titulo : 'coisa 2', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
-    { imagens: ['coisa.jpg'] , titulo : 'coisa 3', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
-    { imagens: ['coisa.jpg'] , titulo : 'coisa 4', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
-]
+   ]
  
 
   public nikes = [
     {  codigo: 1, categoria: 3, imagens: ['coisa.jpg'] , titulo : 'coisa 1', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
-    { imagens: ['coisa.jpg'] , titulo : 'coisa 2', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
-    { imagens: ['coisa.jpg'] , titulo : 'coisa 3', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
 ]
 
+public camisetas = [
+  {  codigo: 1, categoria: 3, imagens: ['coisa.jpg'] , titulo : 'coisa 1', valor: '400', botao: 'Ver Mais', descricao   : 'Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.', },
+]
  
   constructor(private navCtrl: NavController) {}
 
