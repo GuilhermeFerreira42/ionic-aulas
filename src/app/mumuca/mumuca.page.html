@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar class="header" color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <br>
+    <ion-title class="ion-text-center">ngFashion</ion-title>
+    
+    <ion-buttons slot="end">
+      <ion-col size="2" class="ion-text-end account-icon" width="100%">
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </ion-col>
+    </ion-buttons>
+    
+    <ion-row class="cabecalho">
+      <ion-segment [(ngModel)]="segment">
+        <ion-segment-button value="0">
+          <ion-label class="bold-text">adidas</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="1">
+          <ion-label class="bold-text">nike</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="2">
+          <ion-label class="bold-text">camisetas</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-row>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-menu contentId="main" type="overlay">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item routerLink="/home">HOME</ion-item>
+      <ion-item routerLink="/mumuca">MUMUCA</ion-item>
+      <ion-item routerLink="/page2">Guilherme Ferreira</ion-item>
+      <ion-item routerLink="/page2">Nicolas Correia</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+
+
+<ion-content>
+  <ion-router-outlet id="main"></ion-router-outlet>
+  <div class="container">
+    <img src="{{pathImgs}}mumuca.png" alt="Mumuca">
+  </div>
+</ion-content>

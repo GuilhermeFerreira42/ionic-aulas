@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'pagina',
     loadChildren: () => import('./pagina/pagina.module').then( m => m.PaginaPageModule)
+  },  {
+    path: 'mumuca',
+    loadChildren: () => import('./mumuca/mumuca.module').then( m => m.MumucaPageModule)
   },
+
 ];
 
 @NgModule({
